@@ -47,14 +47,17 @@ public class MainActivity extends AppCompatActivity {
         ListAdapter listAdapter = new ListAdapter(this, getList());
         rv.setAdapter(listAdapter);
         ///1111111111
-        ///aaaa
-        //
-        //
-        //
+
         rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
+                if(newState==RecyclerView.SCROLL_STATE_IDLE){
+                    //33333333
+                    ///44444444
+                    ///55555555555
+
+                }
             }
         });
 
