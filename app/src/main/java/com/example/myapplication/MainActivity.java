@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 if(newState==RecyclerView.SCROLL_STATE_IDLE){
                     //aaaa
                     ///bbb
-                    ///
+                    ///ccc
 
 
 
