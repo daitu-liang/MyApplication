@@ -64,13 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
                     ///6666
                     //7777
-                    //888
-                    //99
-                    //aaaaaaaaaa
 
-                    //bbbbbbbbbbbbbb
-                    //cccccccccccc
-                    //dddd
                 }
             }
         });
