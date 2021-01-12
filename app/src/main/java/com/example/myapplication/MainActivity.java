@@ -53,17 +53,17 @@ public class MainActivity extends AppCompatActivity {
             public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
                 if(newState==RecyclerView.SCROLL_STATE_IDLE){
-                    //33333333
-                    ///44444444
-                    ///55555555555
+                    //aaaa
+                    ///
+                    ///
 
 
 
                     ///
 
 
-                    ///6666
-                    //7777
+                    ///
+                    //7
 
                 }
             }
