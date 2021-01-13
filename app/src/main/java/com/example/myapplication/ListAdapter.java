@@ -24,13 +24,13 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ItemViewHold> 
     @Override
     public ItemViewHold onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View itemView= LayoutInflater.from(context).inflate(R.layout.item_layout,parent);
+        View itemView= LayoutInflater.from(context).inflate(R.layout.item_layout,parent,false);
         return new ItemViewHold(itemView);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return dataList.size();
     }
 
     @Override

@@ -17,71 +17,52 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rv;
 
+    int pageIndex = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         testGit();
 
-        ((Button)findViewById(R.id.btn1)).setOnClickListener(new View.OnClickListener() {
+        ((Button) findViewById(R.id.btn1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (pageIndex > 3) {
+                    pageIndex-=3;
+                    rv.smoothScrollToPosition(pageIndex);
+                }
 
             }
         });
-        ((Button)findViewById(R.id.btn2)).setOnClickListener(new View.OnClickListener() {
+        ((Button) findViewById(R.id.btn2)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (pageIndex < 30) {
+                    pageIndex+=3;
+                    rv.smoothScrollToPosition(pageIndex);
+                }
             }
         });
     }
 
     private void testGit() {
 
-         rv = (RecyclerView) findViewById(R.id.rv);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-
+        rv = (RecyclerView) findViewById(R.id.rv);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        linearLayoutManager.setOrientation(RecyclerView.HORIZONTAL);
         rv.setLayoutManager(linearLayoutManager);
 
         ListAdapter listAdapter = new ListAdapter(this, getList());
         rv.setAdapter(listAdapter);
-        ///1111111111
 
-        rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
-                super.onScrollStateChanged(recyclerView, newState);
-                if(newState==RecyclerView.SCROLL_STATE_IDLE){
-                    //aaaa
-                    ///bbb
-                    ///ccc
-                    //bbbb
-
-
-
-                    ///ddd
-                    ///eeee
-                    //ff
-
-
-                    ///qqq
-                    //7888
-
-
-
-                    //vvvvv
-
-                }
-            }
-        });
 
     }
 
     private List<String> getList() {
-        List<String> mlist=new ArrayList<>();
-        for (int i = 0; i <30; i++) {
-            mlist.add("item-"+i);
+        List<String> mlist = new ArrayList<>();
+        for (int i = 0; i < 30; i++) {
+            mlist.add("item-" + i);
         }
         return mlist;
     }
