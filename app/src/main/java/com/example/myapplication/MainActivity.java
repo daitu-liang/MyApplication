@@ -30,14 +30,6 @@ public class MainActivity extends AppCompatActivity {
         testGit();
 
 
-        ///111111111111----------55
-        ///222222222221----------2
-        ///4444444444444----------2
-
-
-        ///stash----------2
-
-
 
         llContainer=(LinearLayout)findViewById(R.id.ll_container);
         View view= LayoutInflater.from(this).inflate(R.layout.item_test,llContainer,false);
@@ -45,12 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
         tvdes=(TextView)findViewById(R.id.tv_des);
         tvdes.setText("5555咔咔咔咔咔咔扩扩扩扩扩扩扩扩扩扩扩555555");
-        tvdes.setText("44444444444qwwqwq:www");
-        ////////////
+        tvdes.setText("44444444444qwwqwq:");
 
-        //dddddddd
-///dddoooooooooooooo
-       // cc
         ((Button) findViewById(R.id.btn1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
