@@ -6,9 +6,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,12 +20,23 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rv;
 
     int pageIndex = 0;
+    private LinearLayout llContainer;
+    private TextView tvdes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         testGit();
+
+
+
+        llContainer=(LinearLayout)findViewById(R.id.ll_container);
+        View view= LayoutInflater.from(this).inflate(R.layout.item_test,llContainer,false);
+        llContainer.addView(view);
+
+        tvdes=(TextView)findViewById(R.id.tv_des);
+        tvdes.setText("55555555555555555");
 
         ((Button) findViewById(R.id.btn1)).setOnClickListener(new View.OnClickListener() {
             @Override
