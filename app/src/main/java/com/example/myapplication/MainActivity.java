@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
         ///4444444444444----------2
 
 
+        ///stash----------2
+
+
 
         llContainer=(LinearLayout)findViewById(R.id.ll_container);
         View view= LayoutInflater.from(this).inflate(R.layout.item_test,llContainer,false);
