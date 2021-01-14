@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.myapplication.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
