@@ -12,8 +12,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.myapplication.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
         ListAdapter listAdapter = new ListAdapter(this, getList());
         rv.setAdapter(listAdapter);
 
+        //11111
+        //2222
+        //3333
 
     }
 
