@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         tvdes=(TextView)findViewById(R.id.tv_des);
         tvdes.setText("5555咔咔咔咔咔咔扩扩扩扩扩扩扩扩扩扩扩555555");
+        tvdes.setText("44444444444");
 
         ((Button) findViewById(R.id.btn1)).setOnClickListener(new View.OnClickListener() {
             @Override
